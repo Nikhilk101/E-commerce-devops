@@ -14,7 +14,10 @@ export default function NavBar() {
         <nav className="navInner">
           <Link to="/" className="brand">
             <span className="brandBadge" aria-hidden="true" />
-            TeeStore
+            <span className="brandText">
+              <span className="brandTitle">TeeStore</span>
+              <span className="brandTagline">Men & Women T-shirts</span>
+            </span>
           </Link>
 
           <div className="navLinks">
@@ -38,7 +41,10 @@ export default function NavBar() {
           <div className="navRight">
             <Link to="/cart" className="pill">
               <span className="pillDot" aria-hidden="true" />
-              Cart ({count})
+              <span>Cart</span>
+              <span className="pillCount" aria-label={`Cart items: ${count}`}>
+                {count}
+              </span>
             </Link>
           </div>
         </nav>
