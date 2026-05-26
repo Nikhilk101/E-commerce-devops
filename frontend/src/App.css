@@ -1,0 +1,225 @@
+.appShell {
+  min-height: 100vh;
+}
+
+.navWrap {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(11, 18, 32, 0.55);
+}
+
+.navInner {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  text-decoration: none;
+}
+
+.brandBadge {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  border: 1px solid rgba(167, 139, 250, 0.5);
+  background: radial-gradient(circle at 30% 20%, rgba(167, 139, 250, 0.65), rgba(124, 58, 237, 0.25));
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.25);
+}
+
+.navLinks {
+  display: flex;
+  gap: 8px;
+  margin-left: 18px;
+  flex-wrap: wrap;
+}
+
+.navLink {
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  color: var(--muted);
+  transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+.navLink:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.navLinkActive {
+  background: rgba(124, 58, 237, 0.18);
+  border-color: rgba(124, 58, 237, 0.35);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.navRight {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  text-decoration: none;
+}
+
+.pillDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(167, 139, 250, 0.85);
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.18);
+}
+
+.hero {
+  padding: 18px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: radial-gradient(900px 220px at 20% 10%, rgba(124, 58, 237, 0.22), transparent 60%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent);
+}
+
+.heroTitle {
+  font-size: 34px;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.6px;
+}
+
+.heroSub {
+  margin: 0;
+  color: var(--muted);
+}
+
+.sectionTitle {
+  margin: 20px 0 12px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.productCard {
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+  overflow: hidden;
+  transition: transform 140ms ease, border-color 140ms ease, background 140ms ease;
+}
+
+.productCard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(167, 139, 250, 0.35);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.035));
+}
+
+.productMedia {
+  height: 160px;
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted-2);
+}
+
+.productImg {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.productBody {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.productName {
+  font-weight: 800;
+  letter-spacing: -0.2px;
+}
+
+.productMetaRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.tag {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 4px 8px;
+  border-radius: 999px;
+  text-transform: capitalize;
+}
+
+.price {
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.rowBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.cartItem {
+  padding: 12px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.qtyControls {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qtyNumber {
+  min-width: 34px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.formCard {
+  max-width: 560px;
+  padding: 16px;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 720px) {
+  .twoCol {
+    grid-template-columns: 1fr;
+  }
+}
